@@ -1,2 +1,2 @@
 # meu-nutri-api
-API to webapp Meu Nutri
+API to Meu Nutri webapp
