@@ -24,10 +24,7 @@ public class DadosPacienteDto {
         private Long id;
 
         @NotNull
-        @JsonFormat(pattern = "dd/MM/yyy HH:mm")
-        private LocalDateTime dtCadastro;
-
-        @NotNull
+        @Valid
         private DadosUsuarioDto usuario;
 
         @NotNull

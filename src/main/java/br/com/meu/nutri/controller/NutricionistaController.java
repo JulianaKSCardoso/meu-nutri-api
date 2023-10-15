@@ -24,7 +24,7 @@ public class NutricionistaController {
 
 
     @GetMapping
-    public Page<DadosNutricionistaDto> listarTodos(@PageableDefault(size = 10, sort = {"nome"}) Pageable paginacao) {
+    public Page<DadosNutricionistaDto> listarTodos(@PageableDefault(size = 10, sort = {"usuario.nome"}) Pageable paginacao) {
         return service.listarTodos(paginacao);
     }
 

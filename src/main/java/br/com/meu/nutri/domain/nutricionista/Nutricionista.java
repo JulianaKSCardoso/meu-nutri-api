@@ -1,5 +1,6 @@
 package br.com.meu.nutri.domain.nutricionista;
 
+import br.com.meu.nutri.domain.login.DadosLoginDto;
 import br.com.meu.nutri.domain.usuario.Usuario;
 import br.com.meu.nutri.domain.endereco.Endereco;
 import br.com.meu.nutri.enums.Genero;

@@ -32,7 +32,5 @@ public class Refeicao {
     @OneToMany(cascade = CascadeType.PERSIST, mappedBy = "refeicao")
     private List<ItemRefeicao> itensRefeicao = new ArrayList<>();
 
-
-
 }
 

@@ -1,6 +1,5 @@
 package br.com.meu.nutri.controller;
 
-
 import br.com.meu.nutri.domain.paciente.DadosPacienteDto;
 import br.com.meu.nutri.services.PacienteService;
 import jakarta.validation.Valid;
@@ -23,7 +22,7 @@ public class PacienteController {
     private PacienteService service;
 
     @GetMapping
-    public Page<DadosPacienteDto> listarTodos(@PageableDefault (size= 10, sort = {"nome"})Pageable paginacao) {
+    public Page<DadosPacienteDto> listarTodos(@PageableDefault (size= 10, sort = {"usuario.nome"})Pageable paginacao) {
         return service.listarTodos(paginacao);
     }
 

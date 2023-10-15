@@ -23,17 +23,4 @@ public class DadosMedidasDto {
     private float coxaDireita;
     private float coxaEsquerda;
 
-    public DadosMedidasDto(Medida medidas) {
-        this.peso = medidas.getPeso();
-        this.altura = medidas.getAltura();
-        this.bracoDireito = medidas.getBracoDireito();
-        this.bracoEsquerdo = medidas.getBracoEsquerdo();
-        this.ombros = medidas.getOmbros();
-        this.peitoral = medidas.getPeitoral();
-        this.cintura = medidas.getCintura();
-        this.abdomen = medidas.getAbdomen();
-        this.quadril = medidas.getQuadril();
-        this.coxaDireita = medidas.getCoxaDireita();
-        this.coxaEsquerda = medidas.getCoxaEsquerda();
-    }
 }

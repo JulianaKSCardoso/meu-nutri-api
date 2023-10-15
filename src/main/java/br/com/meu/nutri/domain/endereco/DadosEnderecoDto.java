@@ -14,7 +14,7 @@ import lombok.Setter;
 @NoArgsConstructor
 public class DadosEnderecoDto {
 
-
+    @NotBlank
     private String logradouro;
 
     @NotBlank
@@ -34,4 +34,6 @@ public class DadosEnderecoDto {
     private String cep;
 
     private String complemento;
+
+
 }

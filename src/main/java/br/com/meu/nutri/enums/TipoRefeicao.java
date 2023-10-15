@@ -5,10 +5,10 @@ import lombok.Getter;
 @Getter
 public enum TipoRefeicao {
 
-    CAFEDAMANHA("Café da Manhã"),
-    LANCHEDAMANHA("Lanche da Manhã"),
+    CAFE_DA_MANHA("Café da Manhã"),
+    LANCHE_DA_MANHA("Lanche da Manhã"),
     ALMOCO("Almoço"),
-    LANCHEDATARDE("Lanche da Tarde"),
+    LANCHE_DA_TARDE("Lanche da Tarde"),
     JANTAR("Jantar"),
     CEIA("Ceia");
 

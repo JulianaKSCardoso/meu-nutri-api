@@ -33,10 +33,9 @@ public class PacienteService {
 
     public DadosPacienteDto cadastrar(DadosPacienteDto dto) {
         Paciente paciente = modelMapper.map(dto, Paciente.class);
-//        paciente.setDtCadastro(LocalDateTime.now());
         paciente.setAtivo(true);
+        paciente.getUsuario().setDtCadastro(LocalDateTime.now());
         repository.save(paciente);
-        
         return modelMapper.map(paciente, DadosPacienteDto.class);
     }
 

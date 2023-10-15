@@ -22,11 +22,6 @@ public class PlanoAlimentar {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @OneToMany(cascade = CascadeType.PERSIST, mappedBy = "planoAlimentar")
-    private List<Refeicao> refeicoes = new ArrayList<>();
-
-    private String observacao;
-
     @NotNull
     @Column(name = "paciente_id")
     private Long pacienteId;
@@ -34,5 +29,11 @@ public class PlanoAlimentar {
     @NotNull
     @Column(name = "nutricionista_id")
     private Long nutricionistaId;
+
+    @OneToMany(cascade = CascadeType.PERSIST, mappedBy = "planoAlimentar")
+    private List<Refeicao> refeicoes = new ArrayList<>();
+
+    private String observacao;
+
 
 }

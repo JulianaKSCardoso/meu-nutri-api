@@ -20,12 +20,7 @@ public class DadosNutricionistaDto {
     private DadosUsuarioDto usuario;
 
     @NotNull
-    private Genero genero;
-
-    @NotNull
     @Valid
     private DadosEnderecoDto endereco;
-
-    private String observacao;
 
 }

@@ -19,7 +19,6 @@ import java.util.Date;
 @NoArgsConstructor
 public class Usuario {
 
-    @JsonFormat(pattern = "dd/MM/yyy")
     private LocalDateTime dtCadastro;
     private String nome;
     private Date dtNascimento;
@@ -58,5 +57,4 @@ public class Usuario {
         this.genero = dados.getGenero();
         this.observacao = dados.getObservacao();
     }
-
 }

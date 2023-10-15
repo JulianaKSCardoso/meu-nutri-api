@@ -22,7 +22,7 @@ public class DadosConsultaDto {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @JsonFormat(pattern = "dd/MM/yyy HH:mm")
+    @JsonFormat(pattern = "dd/MM/yyyy HH:mm")
     private LocalDateTime dataHoraConsulta;
 
     @NotNull

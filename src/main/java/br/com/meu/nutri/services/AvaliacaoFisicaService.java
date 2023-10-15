@@ -8,6 +8,8 @@ import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
+
 @Service
 public class AvaliacaoFisicaService {
 
@@ -19,6 +21,13 @@ public class AvaliacaoFisicaService {
 
     public DadosAvaliacaoFisicaDto buscarPorIdPaciente(Long id) {
         AvaliacaoFisica avaliacaoFisica = repository.findById(id).orElseThrow(EntityNotFoundException::new);
+        return modelMapper.map(avaliacaoFisica, DadosAvaliacaoFisicaDto.class);
+    }
+
+    public DadosAvaliacaoFisicaDto cadastrar(DadosAvaliacaoFisicaDto dto) {
+        AvaliacaoFisica avaliacaoFisica = modelMapper.map(dto, AvaliacaoFisica.class);
+        avaliacaoFisica.setDataAvaliacao(LocalDateTime.now());
+        repository.save(avaliacaoFisica);
         return modelMapper.map(avaliacaoFisica, DadosAvaliacaoFisicaDto.class);
     }
 }
